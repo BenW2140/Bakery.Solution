@@ -19,18 +19,20 @@ public class Program
       Console.WriteLine("What would you like to buy? Enter amount of bread then pastries:");
       string bread = Console.ReadLine();
       string pastries = Console.ReadLine();
-      while (bread == "" || pastries == "")
+      int numBread = 0;
+      int numPastries = 0;
+      while (String.IsNullOrEmpty(bread) || String.IsNullOrEmpty(pastries))
       {
         Console.WriteLine("If you changed your mind about buying something enter 0, otherwise please enter a positive integer:");
         bread = Console.ReadLine();
         pastries = Console.ReadLine();
-        // while (numBread < 0 || numPastries < 0)
-        // {
-
-        // }
+        numBread = int.Parse(bread);
+        numPastries = int.Parse(pastries);
+        if (numBread < 0 || numPastries < 0)
+        {
+          bread = "";
+        }
       }
-      int numBread = int.Parse(bread);
-      int numPastries = int.Parse(pastries);
       Bread breadOrder = new Bread(numBread);
       Pastry pastryOrder = new Pastry(numPastries);
       breadOrder.BreadDeal();
