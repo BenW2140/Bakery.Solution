@@ -24,5 +24,12 @@ namespace Bakery.Tests
       Bread loaves = new Bread(2);
       Assert.AreEqual(10, loaves.TotalPrice);
     }
+    [TestMethod]
+    public void BreadDeal_ReturnTotalAfterDealApplied_Float()
+    {
+      Bread loaves = new Bread(3);
+      loaves.BreadDeal();
+      Assert.AreEqual(15, loaves.TotalPrice);
+    }
   }
 }
