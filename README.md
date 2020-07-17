@@ -6,7 +6,7 @@
 
 ## Description
 
-_This program will allow the user to order bread and pastrys and will display costs for each as well as a total cost and any deals that may be going on_
+_This program will allow the user to order bread andpastries and will display costs for each as well as a total cost and any deals that may be going on_
 
 ## Setup/Installation Requirements
 
@@ -35,9 +35,11 @@ Behavior|Input|Output
 The program will return the price of a loaf of bread|1 Loaf|$5
 The Program will return how many loaves of bread the user entered|3 Loaves|3 Loaves
 The Program will return the price of a pastry|1 Pastry|$2
-The Program will return how many pastrys the user entered|5 Pastrys|5 Pastrys
-the Program will account for any deals in the users order|3 Pastrys|$5
-The Program will return the total price of the order|1 Loaf and 3 Pastrys|Total: $10
+The Program will return how many pastries the user entered|5 Pastries|5 Pastries
+The Program will return the total price of bread|3 Loaves|$15
+The Program will return the total price of pastries|2 Pastries|$4
+the Program will account for any deals in the users order|3 Pastries|$5
+The Program will return the total price of the order|1 Loaf and 3 Pastries|Total: $10
 
 
 ## Known Bugs
