@@ -1,12 +1,12 @@
-# _{Application Name}_
+# _HappyLittleBakery_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _Order some baked goods here, July 17, 2020_
 
 #### By _**Ben White**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This program will allow the user to order bread and pastrys and will display costs for each as well as a total cost and any deals that may be going on_
 
 ## Setup/Installation Requirements
 
@@ -18,21 +18,27 @@ Software Requirements:
 
 2. Clone this repository onto your computer: https://github.com/...
 
-3. In your preferred terminal window, navigate into PROJECTNAME.SOLUTIONS/PROJECTNAME using cd (i.e. cd
-   desktop/PROJECTNAME.SOLUTIONS/PROJECTNAME) and open the project with your preferred code editor.
+3. In your preferred terminal window, navigate into Bakery.Solution/Bakery using cd (i.e. cd
+   desktop/Bakery.Solution/Bakery) and open the project with your preferred code editor.
 4. Run the following terminal command: $ dotnet restore
 
 5. To initiate this terminal program, run the command: $ dotnet run
 
-6. To run the test suite included with this project, within the terminal navigate into PROJECTNAME.TESTS and run the following commands:
+6. To run the test suite included with this project, within the terminal navigate into Bakery.Tests and run the following commands:
   * $ dotnet restore
   * $ dotnet test
 
 ## Specs
 
-| |
+Behavior|Input|Output
 ------|------|------
-| |
+The program will return the price of a loaf of bread|1 Loaf|$5
+The Program will return the price of a pastry|1 Pastry|$2
+The Program will return how many loaves of bread the user entered|3 Loaves|3 Loaves
+The Program will return how many pastrys the user entered|5 Pastrys|5 Pastrys
+the Program will account for any deals in the users order|3 Pastrys|$5
+The Program will return the total price of the order|1 Loaf and 3 Pastrys|Total: $10
+
 
 ## Known Bugs
 
@@ -40,11 +46,11 @@ _{Are there issues that have not yet been resolved that you want to let users kn
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_Ben White: bwhite2140@outlook.com_
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_C#, .NET_
 
 ### License
 
