@@ -15,7 +15,7 @@ namespace Bakery.Tests
     [TestMethod]
     public void BreadQuantity_ReturnNumberOfLoaves_Int()
     {
-      Bread loaves = new Bread(2);
+      Bread loaves = new Bread(3);
       Assert.AreEqual(3, loaves.Quantity);
     }
   }
