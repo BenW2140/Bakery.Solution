@@ -29,7 +29,7 @@ namespace Bakery.Tests
     {
       Pastry pastries = new Pastry(3);
       pastries.PastryDeal();
-      Assert.AreEqual(6, pastries.TotalPrice);
+      Assert.AreEqual(5, pastries.TotalPrice);
     }
   }
 }
