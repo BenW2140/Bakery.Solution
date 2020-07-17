@@ -5,7 +5,7 @@ namespace Bakery.Models
     public float Price {get;}
     public Pastry(int quantity)
     {
-      Price = 5;
+      Price = 2;
     }
   }
 }
