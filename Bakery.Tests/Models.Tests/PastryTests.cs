@@ -24,5 +24,12 @@ namespace Bakery.Tests
       Pastry pastries = new Pastry(2);
       Assert.AreEqual(4, pastries.TotalPrice);
     }
+    [TestMethod]
+    public void PastryDeal_ReturnTotalAfterDealApplied_Float()
+    {
+      Pastry pastries = new Pastry(3);
+      pastries.PastryDeal();
+      Assert.AreEqual(6, pastries.TotalPrice);
+    }
   }
 }
