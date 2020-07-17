@@ -22,7 +22,7 @@ namespace Bakery.Tests
     public void BreadTotal_ReturnTotalPriceOfBread_Float()
     {
       Bread loaves = new Bread(3);
-      Assert.AreEqual(10, loaves.TotalPrice);
+      Assert.AreEqual(15, loaves.TotalPrice);
     }
   }
 }
