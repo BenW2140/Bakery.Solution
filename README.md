@@ -33,8 +33,8 @@ Software Requirements:
 Behavior|Input|Output
 ------|------|------
 The program will return the price of a loaf of bread|1 Loaf|$5
-The Program will return the price of a pastry|1 Pastry|$2
 The Program will return how many loaves of bread the user entered|3 Loaves|3 Loaves
+The Program will return the price of a pastry|1 Pastry|$2
 The Program will return how many pastrys the user entered|5 Pastrys|5 Pastrys
 the Program will account for any deals in the users order|3 Pastrys|$5
 The Program will return the total price of the order|1 Loaf and 3 Pastrys|Total: $10

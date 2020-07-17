@@ -9,8 +9,14 @@ namespace Bakery.Tests
     [TestMethod]
     public void BreadPrice_ReturnPriceOfBread_Float()
     {
-      Bread loaf = new Bread();
+      Bread loaf = new Bread(1);
       Assert.AreEqual(5, loaf.Price);
+    }
+    [TestMethod]
+    public void BreadQuantity_ReturnNumberOfLoaves_Int()
+    {
+      Bread loaves = new Bread(2);
+      Assert.AreEqual(3, loaves.Quantity);
     }
   }
 }
