@@ -6,6 +6,11 @@ namespace Bakery.Tests
   [TestClass]
   public class BreadTests
   {
-    // Test methods go here
+    [TestMethod]
+    public void BreadPrice_ReturnPriceOfBread_Float()
+    {
+      Bread loaf = new Bread();
+      Assert.AreEqual(5, loaf.Price);
+    }
   }
 }
