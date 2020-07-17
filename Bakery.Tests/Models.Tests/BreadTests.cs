@@ -21,8 +21,8 @@ namespace Bakery.Tests
     [TestMethod]
     public void BreadTotal_ReturnTotalPriceOfBread_Float()
     {
-      Bread loaves = new Bread(3);
-      Assert.AreEqual(15, loaves.TotalPrice);
+      Bread loaves = new Bread(2);
+      Assert.AreEqual(10, loaves.TotalPrice);
     }
   }
 }

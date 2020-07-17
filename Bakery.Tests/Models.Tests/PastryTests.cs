@@ -18,5 +18,11 @@ namespace Bakery.Tests
       Pastry pastries = new Pastry(5);
       Assert.AreEqual(5, pastries.Quantity);
     }
+    [TestMethod]
+    public void PastryTotal_ReturnTotalPriceOfPastries_Float()
+    {
+      Pastry pastries = new Pastry(2);
+      Assert.AreEqual(5, pastries.TotalPrice);
+    }
   }
 }
