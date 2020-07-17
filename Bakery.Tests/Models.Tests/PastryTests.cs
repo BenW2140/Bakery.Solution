@@ -15,7 +15,7 @@ namespace Bakery.Tests
     [TestMethod]
     public void PastryQuantity_ReturnNumberOfPastries_Int()
     {
-      Pastry pastries = new Pastry(3);
+      Pastry pastries = new Pastry(5);
       Assert.AreEqual(5, pastries.Quantity);
     }
   }
