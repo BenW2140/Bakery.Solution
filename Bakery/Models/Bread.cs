@@ -15,7 +15,7 @@ namespace Bakery.Models
 
     public void BreadDeal()
     {
-      if (Quantity % 3 == 0)
+      if (Quantity >= 3)
       {
          TotalPrice -= Price * (Quantity / 3);
       }
