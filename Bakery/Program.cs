@@ -36,26 +36,29 @@ public class Program
     Console.WriteLine("What would you like to buy? Enter amount of bread then pastries:");
     string bread = Console.ReadLine();
     string pastries = Console.ReadLine();
-    int numBread = 0;
-    int numPastries = 0;
-    ValidateUserInput(bread, pastries, numBread, numPastries);
+    ValidateUserInput(bread, pastries);
   }
 
-  public static void ValidateUserInput(string bread, string pastries, int numBread, int numPastries)
+  public static void ValidateUserInput(string bread, string pastries)
   {
-    while (String.IsNullOrEmpty(bread) || String.IsNullOrEmpty(pastries))
+    int numBread = 0;
+    int numPastries = 0;
+    while (String.IsNullOrEmpty(bread) || String.IsNullOrEmpty(pastries) || !(int.TryParse(bread, out int number) && int.TryParse(pastries, out number)))
     {
       Console.WriteLine("If you changed your mind about buying something enter 0, otherwise please enter a positive integer:");
       bread = Console.ReadLine();
       pastries = Console.ReadLine();
-      numBread = int.Parse(bread);
-      numPastries = int.Parse(pastries);
+      if (int.TryParse(bread, out number) && int.TryParse(pastries, out number))
+      {
+        numBread = int.Parse(bread);
+        numPastries = int.Parse(pastries);
+      }
       if (numBread < 0 || numPastries < 0)
       {
         bread = "";
       }
     }
-    CreateOrder(numPastries, numPastries);
+    CreateOrder(numBread, numPastries);
   }
 
   public static void CreateOrder(int numBread, int numPastries)
